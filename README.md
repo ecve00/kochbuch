@@ -1,6 +1,8 @@
 # Kochbuch
 
-Rezepte sammeln, Menüs planen, einkaufen und Schritt für Schritt kochen. Auf Mac und iPad, mit einer gemeinsamen Supabase-Datenbank.
+Rezepte sammeln, Menüs planen, einkaufen und Schritt für Schritt kochen. Auf iPhone, iPad und Mac, mit einer gemeinsamen Supabase-Datenbank.
+
+**Online:** https://ecve00.github.io/kochbuch/ (GitHub Pages, Repository [ecve00/kochbuch](https://github.com/ecve00/kochbuch))
 
 ## Was die App kann
 
@@ -37,6 +39,16 @@ Dann http://localhost:8010 öffnen. Solange `js/config.js` leer ist, läuft die 
 Die Anmeldung läuft mit E-Mail und Passwort statt mit einem Link per Mail. Auf dem iPad hat die installierte App einen eigenen Speicher, getrennt von Safari: Ein Anmelde-Link würde in Safari landen statt in der App.
 
 ## Online stellen
+
+Das Kochbuch läuft über **GitHub Pages** aus dem Branch `main`. Änderungen gehen so online:
+
+```bash
+git add -A && git commit -m "Was sich geändert hat" && git push
+```
+
+Nach ein bis zwei Minuten ist die neue Fassung unter https://ecve00.github.io/kochbuch/ erreichbar. Erhöhe vorher in `sw.js` die `VERSION`, damit installierte Apps sie laden.
+
+Andere Anbieter gehen genauso:
 
 Die App besteht aus statischen Dateien und braucht eine HTTPS-Adresse, damit sie sich installieren lässt und das Display wach halten kann. Kostenlose Möglichkeiten:
 
